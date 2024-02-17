@@ -1,3 +1,4 @@
+# TODO: Add better plant care tips
 plant_care_tips = {
     'Apple___Apple_scab': 'To prevent apple scab, practice good sanitation by removing fallen leaves and fruit.   Apply fungicides at appropriate times in the growing season.   Prune the trees during the dormant season to improve air circulation.   Choose resistant apple varieties if available and ensure proper spacing between trees to promote airflow.  ',
     'Apple___Black_rot': 'Prune infected parts of the tree and remove mummified fruits to reduce overwintering inoculum.   Apply fungicides before bud break in the spring and as needed during the growing season.   Improve orchard drainage to minimize moisture around the trees.   Remove nearby wild apple and crabapple trees, which can serve as sources of inoculum.  ',
@@ -37,4 +38,127 @@ plant_care_tips = {
     'Tomato___Tomato_Yellow_Leaf_Curl_Virus': 'Control whiteflies, which spread the virus, with insecticides.   Remove and destroy infected plants to prevent further spread of the virus.   Plant disease-resistant tomato varieties when available and applicable.   Implement cultural practices such as mulching and proper irrigation to promote plant health and vigor.  ',
     'Tomato___Tomato_mosaic_virus': 'Control aphids, which spread the virus, with insecticides.   Remove and destroy infected plants to prevent further spread of the virus.   Plant disease-resistant tomato varieties when available and applicable.   Implement cultural practices such as mulching and proper irrigation to promote plant health and vigor.  ',
     'Tomato___healthy': 'Plant tomatoes in well-drained soil with good sunlight exposure.   Provide support for vines as needed to prevent fruit rot.   Apply balanced fertilizers based on soil test results to promote plant growth and fruit production.   Monitor tomato plants regularly for signs of pests such as tomato hornworms and tomato fruitworms and take appropriate control measures as needed.  '
+}
+
+# label_to_name = {
+#     'Tomato___Late_blight': "Tomato with Late Blight",
+#     'Tomato___healthy': "Healthy Tomato",
+#     'Grape___healthy': "Healthy Grape",
+#     'Orange___Haunglongbing_(Citrus_greening)': "Orange with Huanglongbing (citrus greening)",
+#     'Soybean___healthy': "Healthy Soybean",
+#     'Squash___Powdery_mildew': "Squash with Powdery Mildew",
+#     'Potato___healthy': "Healthy Potato",
+#     'Corn_(maiz)___Northern_Leaf_Blight': "Corn (maize) with Northern Leaf Blight",
+#     'Tomato___Early_blight': "Tomato with Early Blight",
+#     'Tomato___Septoria_leaf_spot': "Tomato with Septoria (leaf spot)",
+#     'Corn_(maiz)___Cercospora_leaf_spot Gray_leaf_spot': "Corn (maize) with Cercospora (gray leaf spot)",
+#     'Strawberry___Leaf_scorch': "Strawberry with Leaf Scorch",
+#     'Peach___healthy': "Healthy Peach",
+#     'Apple___Apple_scab': "Apple with Apple Scab",
+#     'Tomato___Tomato_Yellow_Leaf_Curl_Virus': "Tomato with Yellow Leaf Curl Virus",
+#     'Tomato___Bacterial_spot': "Tomato with Bacterial Spot",
+#     'Apple___Black_rot': "Apple with Black Rot",
+#     'Blueberry___healthy': "Healthy Blueberry",
+#     'Cherry_(including_sour)___Powdery_mildew': "Cherry (including sour) with Powdery Mildew",
+#     'Peach___Bacterial_spot': "Peach with Bacterial Spot",
+#     'Apple___Cedar_apple_rust': "Apple with Cedar Apple Rust",
+#     'Tomato___Target_Spot': "Tomato with Target Spot",
+#     'Pepper,_bell___health': "Healthy Bell Pepper",
+#     'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)'
+#     'Potato___Late_blight'
+#     'Tomato___Tomato_mosaic_virus'
+#     'Strawberry___healthy'
+#     'Apple___healthy'
+#     'Grape___Black_rot'
+#     'Potato___Early_blight'
+#     'Cherry_(including_sou)___healthy'
+#     'Corn_(maiz)___Common_rust_'
+#     'Grape___Esca_(Black_Measle)'
+#     'Raspberry___healthy'
+#     'Tomato___Leaf_Mold'
+#     'Tomato___Spider_mites Tw-spotted_spider_mite'
+#     'Pepper,_bell___Bacterial_spot'
+#     'Corn_(maiz)___healthy'
+# }
+
+label_to_name = {
+    'Apple___Apple_scab': 'Apple with Apple Scab',
+    'Apple___Black_rot': 'Apple with Black Rot',
+    'Apple___Cedar_apple_rust': 'Apple with Cedar Apple Rust',
+    'Apple___healthy': 'Healthy Apple',
+    'Blueberry___healthy': 'Healty Blueberry',
+    'Cherry_(including_sour)___Powdery_mildew': 'Cherry (including sour) with Powdery Mildew',
+    'Cherry_(including_sour)___healthy': 'Healthy Cherry (including sour)',
+    'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot': 'Corn (maize) with Cercospora (gray leaf spot)',
+    'Corn_(maize)___Common_rust_': 'Corn (maize) with Common Rust',
+    'Corn_(maize)___Northern_Leaf_Blight': 'Corn (maize) with Northern Leaf Blight',
+    'Corn_(maize)___healthy': 'Healthy Corn (maize)',
+    'Grape___Black_rot': 'Grape with Black Rot',
+    'Grape___Esca_(Black_Measles)': 'Grape with Esca [Black Measles]',
+    'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)': 'Grape with Leaf Blight [Isariopsis Leaf Spot]',
+    'Grape___healthy': 'Healthy Grape',
+    'Orange___Haunglongbing_(Citrus_greening)': 'Orange with Haunglongbing (citrus greening)',
+    'Peach___Bacterial_spot': 'Peach with Bacterial Spot',
+    'Peach___healthy': 'Healthy Peach',
+    'Pepper,_bell___Bacterial_spot': 'Bell Pepper with Bacterial Spot',
+    'Pepper,_bell___healthy': 'Healthy Bell Pepper',
+    'Potato___Early_blight': 'Potato with Early Blight',
+    'Potato___Late_blight': 'Potato with Late Blight',
+    'Potato___healthy': 'Healthy Potato',
+    'Raspberry___healthy': 'Healthy Raspberry',
+    'Soybean___healthy': 'Healthy Soybean',
+    'Squash___Powdery_mildew': 'Squash with Powdery Mildew',
+    'Strawberry___Leaf_scorch': 'Strawberry with Leaf Scorch',
+    'Strawberry___healthy': 'Healthy Strawberry',
+    'Tomato___Bacterial_spot': 'Tomato with Bacterial Spot',
+    'Tomato___Early_blight': 'Tomato with Early Blight',
+    'Tomato___Late_blight': 'Tomato with Late Blight',
+    'Tomato___Leaf_Mold': 'Tomato with Leaf Mold',
+    'Tomato___Septoria_leaf_spot': 'Tomato with Septoria (leaf spot)',
+    'Tomato___Spider_mites Two-spotted_spider_mite': 'Tomato with (two-spotted) Spider Mites',
+    'Tomato___Target_Spot': 'Tomato with Target Spot',
+    'Tomato___Tomato_Yellow_Leaf_Curl_Virus': 'Tomato with Yellow Leaf Curl Virus',
+    'Tomato___Tomato_mosaic_virus': 'Tomato with Mosaic Virus',
+    'Tomato___healthy': 'Healthy Tomato'
+}
+
+class_code_to_label = {
+    0: 'Tomato___Late_blight',
+    1: 'Tomato___healthy',
+    2: 'Grape___healthy',
+    3: 'Orange___Haunglongbing_(Citrus_greening)',
+    4: 'Soybean___healthy',
+    5: 'Squash___Powdery_mildew',
+    6: 'Potato___healthy',
+    7: 'Corn_(maize)___Northern_Leaf_Blight',
+    8: 'Tomato___Early_blight',
+    9: 'Tomato___Septoria_leaf_spot',
+    10: 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot',
+    11: 'Strawberry___Leaf_scorch',
+    12: 'Peach___healthy',
+    13: 'Apple___Apple_scab',
+    14: 'Tomato___Tomato_Yellow_Leaf_Curl_Virus',
+    15: 'Tomato___Bacterial_spot',
+    16: 'Apple___Black_rot',
+    17: 'Blueberry___healthy',
+    18: 'Cherry_(including_sour)___Powdery_mildew',
+    19: 'Peach___Bacterial_spot',
+    20: 'Apple___Cedar_apple_rust',
+    21: 'Tomato___Target_Spot',
+    22: 'Pepper,_bell___healthy',
+    23: 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)',
+    24: 'Potato___Late_blight',
+    25: 'Tomato___Tomato_mosaic_virus',
+    26: 'Strawberry___healthy',
+    27: 'Apple___healthy',
+    28: 'Grape___Black_rot',
+    29: 'Potato___Early_blight',
+    30: 'Cherry_(including_sour)___healthy',
+    31: 'Corn_(maize)___Common_rust_',
+    32: 'Grape___Esca_(Black_Measles)',
+    33: 'Raspberry___healthy',
+    34: 'Tomato___Leaf_Mold',
+    35: 'Tomato___Spider_mites Two-spotted_spider_mite',
+    36: 'Pepper,_bell___Bacterial_spot',
+    37: 'Corn_(maize)___healthy',
 }
