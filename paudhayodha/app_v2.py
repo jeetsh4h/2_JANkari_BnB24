@@ -38,10 +38,10 @@ def main():
         initial_sidebar_state="expanded"
     )
 
-    st.title('PodhaYodha :potted_plant:')
+    st.title('PaudhaYodha :potted_plant:')
     st.subheader('Hello, Learn the best way to treat your favourite plants! :wave:')
-    st.write("PodhaYodha is a web app that helps you identify and treat your plants. It uses machine learning to identify the plant and provide you with the best care tips. Just upload a picture of your plant and let PodhaYodha do the rest!")
-    st.write("Upload a picture of your plant and let PodhaYodha identify it for you. Once the plant is identified, PodhaYodha will provide you with the best care tips for your plant. It will also provide you with the best plant shops near you.")
+    st.write("PaudhaYodha is a web app that helps you identify and treat your plants. It uses machine learning to identify the plant and provide you with the best care tips. Just upload a picture of your plant and let PodhaYodha do the rest!")
+    st.write("Upload a picture of your plant and let PaudhaYodha identify it for you. Once the plant is identified, PaudhaYodha will provide you with the best care tips for your plant.")
 
     model = load_plant_disease_model()
 
