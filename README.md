@@ -11,3 +11,32 @@ and provide tailored recommendations, including Do's and Dont's for optimal care
 and gardeners enhance crop yield and plant quality.
 
 The application is created by [Jeet Shah](https://github.com/jeetsh4h) and [Aniket Khetan](https://github.com/aniketkhetan).
+
+The application is hosted on [Streamlit](https://paudhayodha.streamlit.app/) and can be accessed right now. 
+Changes to the deployed app are still being made over at [this repository](https://github.com/jeetsh4h/paudhayodha).
+
+To run the application on your local machine, follow the steps below:
+
+Clone the current repository using the following command:
+```bash
+git clone https://github.com/jeetsh4h/2_JANkari_BnB24.git
+cd 2_JANkari_BnB24/paudhayodha
+```
+*OR* clone the Paudhayodha repsitory.
+```bash
+git clone https://github.com/jeetsh4h/paudhayodha.git
+```
+
+Build a virtual environment using the following command:
+```bash
+python -m venv .venv
+pip install -r requirements.txt
+```
+
+Run the application using the following command:
+```bash
+python -m streamlit run app.py
+```
+
+
+_The above application has only been tested with python 3.11_

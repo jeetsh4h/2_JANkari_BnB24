@@ -1,0 +1,41 @@
+We (artists) need to be able to upload music to a decentralised platform.
+	We can use IPFS for the same -> ipfsapi
+
+The music once downloaded can be protected using DRM,,, or we can embed the smart contract
+into the file (a makeshift DRM) that does not allow file to play or deletes itself when the 
+terms of the smart contracts aren't met -> pallycon
+
+can use the Ethereum network as the blockchain network
+
+The main issue -> avoid users from sharing bought and downloaded music files,,, this can be 
+fixed using DRM^
+
+Use the decentralised database -> ipfs and make UI that creates a IPFS node whenever an artist
+uploads their songs...
+
+There will be a need for a centralised database that stores all metadata -> which album things 
+are in maybe the song saved in the node has that saved as metadata -> all songs which have the
+same album id will be grouped together
+
+local playlists in our application will be a local database,,, sharability of playlists can leverage
+a cdn, like discord, where the playlist is basically a file which gets uploaded,,, and you can just pull
+it and save it.
+
+
+No need to think about security flaws right now,,, will get bogged down
+
+Features uptil now:
+	decentralised distribution of music
+	no middle men to upload music
+	users can own music
+	downloaded music is protected using DRM
+		or a proprietary file format where a smart contract must be fulfilled
+		before each play, within our file system; this will need to be cached
+		as it will be very slow to play a song otherwise
+	playlists are saved locally - can be shared using CDNs (or p2p networks)
+
+	each download requires payment (via smart contracts) to go through regardless, 
+	therefore that is trivial. 
+
+
+Have to figure out how to save number of streams per music to allow for royalty distribution??

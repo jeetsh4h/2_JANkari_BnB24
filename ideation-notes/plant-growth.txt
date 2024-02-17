@@ -1,0 +1,10 @@
+Use a pre-trained model to perform plant classification and disease detection
+Use models like ResNet or VGG-16.
+
+Plant-Village-Dataset is great
+
+Can make a streamlit app and host it essentially instantly
+
+Kaggle has dataset already uploaded, both of us have enough hours combined for the GPU
+
+^seems like we can just do the above, use tensorflow and kaggle and download the weights of the model.
