@@ -1,20 +1,25 @@
 import os
 import cv2
-import numpy as np
 import streamlit as st
-# from PIL import Image
 from plant_care_tips import plant_care_tips
-from streamlit_webrtc import webrtc_streamer, VideoProcessorBase, ClientSettings
+# import numpy as np
+# from PIL import Image
+# from streamlit_webrtc import webrtc_streamer, VideoProcessorBase, ClientSettings
 
 
 def process_species(species):
-    # Check if the input species exists in the dictionary
-        if species in plant_care_tips:
-        # Display the care tips for the input species
-            st.write(f'Care tips for {species}: {plant_care_tips[species]}')
-        else:
-            st.write('Species not found in the database.')
+# Check if the input species exists in the dictionary
+    if species in plant_care_tips:
+    # Display the care tips for the input species
+        st.write(f'Care tips for {species}: {plant_care_tips[species]}')
+    else:
+        st.write('Species not found in the database.')
 
+
+def process_image(image_path):
+    image = cv2.imread(image_path)
+    image = cv2.resize((256, 256, 3))
+    
 
 def main():
     st.set_page_config(
@@ -30,12 +35,18 @@ def main():
     st.write("PodhaYodha is a web app that helps you identify and treat your plants. It uses machine learning to identify the plant and provide you with the best care tips. Just upload a picture of your plant and let PodhaYodha do the rest!")
     st.write("Upload a picture of your plant and let PodhaYodha identify it for you. Once the plant is identified, PodhaYodha will provide you with the best care tips for your plant. It will also provide you with the best plant shops near you.")
 
-    
-    picture = st.camera_input("First, take a picture...")
+    if st.button("Upload Picture"):    
+        picture = st.file_uploader("Upload a picture of a leaf", type=["jpg", "png", "jpeg", "heic"])
+        if picture:
+            with open('test.jpg','wb') as file:
+                file.write(picture.getbuffer())
 
-    if picture:
-        with open ('test.jpg','wb') as file:
-          file.write(picture.getbuffer())
+    if st.button("Take a picture"):
+        picture = st.camera_input("Take a picture of a leaf")
+
+        if picture:
+            with open('test.jpg','wb') as file:
+                file.write(picture.getbuffer())
 
     species = st.text_input('Enter the species name (e.g., Apple, Tomato, etc.):')
 
