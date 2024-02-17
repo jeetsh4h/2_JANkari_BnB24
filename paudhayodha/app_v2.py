@@ -14,6 +14,20 @@ def process_file(uploaded_file):
     image = image.resize((256, 256))
     return np.array(image)
 
+def process_image(model, image):
+    """
+    returns a string that needs to be written using the streamlit write function
+    """
+    confidences = model.predict(image[np.newaxis, ...])
+    class_pred =  np.argmax(confidences)
+    
+    # TODO: get the plant name and disease from the class_pred
+    # make sure to use the confidence value and a threshold to 
+    # decide if the prediction is correct and what to write out
+
+    NotImplemented
+    return ""
+
 
 # streamlit web app things,,, prettify
 def main():
