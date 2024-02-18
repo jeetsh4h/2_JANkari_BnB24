@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 Run the application using the following command:
 ```bash
-python -m streamlit run app.py
+python -m streamlit run Home.py
 ```
 
 
