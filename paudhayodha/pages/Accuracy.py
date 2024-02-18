@@ -57,4 +57,3 @@ with st.container():
 
 # table_data = [st.image('./assets/apple_scab.jpeg',width=100), st.image('./assets/apple_scab.jpeg',width=100), st.image('./assets/apple_scab.jpeg',width=100)]
 # st.table(table_data)
-
