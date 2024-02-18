@@ -3,7 +3,7 @@ from PIL import Image
 import streamlit as st
 from keras.api._v2.keras.models import load_model
 from plant_care_tips import class_code_to_label, label_to_name, plant_care_tips_md
-
+import time
 @st.cache_resource(ttl=3600)
 def load_plant_disease_model():
     return load_model("./assets/resent_plant_village_final.h5")
@@ -49,7 +49,7 @@ def main():
     model = load_plant_disease_model()
 
     # setting up image input
-    option = st.selectbox("Select an option:", ("Take a photo", "Upload an image"))
+    option = st.selectbox("Select an option:", ("Take a photo", "Upload an image","Try a Demo"))
 
     if option == "Take a photo":
         # Use webcam to capture image
@@ -67,7 +67,15 @@ def main():
             st.image(image)
             prediction_write_up = process_image(model, image)
             st.write(prediction_write_up)
-
+    elif option == 'Try a Demo':
+        image = np.array(Image.open("./assets/apple_scab.jpeg"))
+        st.image(image)
+        st.write("Demo image: Apple with Scab")
+        with st.spinner('loading prediction'):
+            time.sleep(1.1)
+        st.write("#### Prediction:")
+        prediction_write_up = process_image(model, image)
+        st.write(prediction_write_up)
 
 if __name__ == "__main__":
     main()
