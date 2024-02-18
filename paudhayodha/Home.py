@@ -2,7 +2,7 @@ import numpy as np
 from PIL import Image
 import streamlit as st
 from keras.api._v2.keras.models import load_model
-from plant_care_tips import plant_care_tips, class_code_to_label, label_to_name
+from plant_care_tips import plant_care_tips, class_code_to_label, label_to_name,plant_care_tips_md
 
 @st.cache_resource(ttl=3600)
 def load_plant_disease_model():
@@ -25,7 +25,7 @@ def process_image(model, image):
     prediction_write_up = ""
     prediction_write_up += f"{label_to_name[label]} predicted with a confidence of {np.max(confidences) * 100:.2f}%  \n"
     prediction_write_up += f"Here are some care tips for your plant:  \n"
-    prediction_write_up += plant_care_tips[label]
+    prediction_write_up += plant_care_tips_md[label]
 
     return prediction_write_up
 

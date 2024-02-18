@@ -122,74 +122,265 @@ plant_care_tips = {
     'Tomato___healthy': 'Plant tomatoes in well-drained soil with good sunlight exposure.   Provide support for vines as needed to prevent fruit rot.   Apply balanced fertilizers based on soil test results to promote plant growth and fruit production.   Monitor tomato plants regularly for signs of pests such as tomato hornworms and tomato fruitworms and take appropriate control measures as needed.  '
 }
 
-# plant_care_tips_md = {
-#     'Apple___Apple_scab': """**Preventing Apple Scab:**
+plant_care_tips_md = {
+    'Apple___Apple_scab': """  **Preventing Apple Scab:**
 
-#     * **Practice good sanitation:** Remove fallen leaves and fruit regularly.
-#     * **Apply fungicides:** Use them at appropriate times during the growing season.
-#     * **Prune trees during dormancy:** Improve air circulation.
-#     * **Choose resistant varieties:** Opt for apple varieties resistant to scab if available.
-#     * **Ensure proper spacing:** Allow proper space between trees for better airflow.
-#     """,
-#     'Apple___Black_rot': """**Managing Apple Black Rot:**
+    -  Practice good sanitation: Remove fallen leaves and fruit regularly.
+    -  Apply fungicides: Use them at appropriate times during the growing season.
+    -  Prune trees during dormancy: Improve air circulation.
+    -  Choose resistant varieties: Opt for apple varieties resistant to scab if available.
+    -  Ensure proper spacing: Allow proper space between trees for better airflow.
+    """,
+    'Apple___Black_rot': """  **Managing Apple Black Rot:**
 
-#     * **Prune infected parts:** Remove infected branches and remove mummified fruits.
-#     * **Apply fungicides:** Use them before bud break in spring and as needed during the season.
-#     * **Improve drainage:** Enhance orchard drainage to minimize moisture around trees.
-#     * **Remove nearby wild apples:** Eliminate nearby wild apple and crabapple trees that can harbor the disease.
-#     """,
-#     'Apple___Cedar_apple_rust': """**Controlling Cedar-Apple Rust:**
+    -  Prune infected parts: Remove infected branches and remove mummified fruits.
+    -  Apply fungicides: Use them before bud break in spring and as needed during the season.
+    -  Improve drainage: Enhance orchard drainage to minimize moisture around trees.
+    -  Remove nearby wild apples: Eliminate nearby wild apple and crabapple trees that can harbor the disease.
+    """,
+    'Apple___Cedar_apple_rust': """  **Controlling Cedar-Apple Rust:**
 
-#     * **Plant resistant varieties:** Choose apple varieties resistant to the disease.
-#     * **Remove cedar trees:** Eliminate cedar trees in the vicinity, which act as alternate hosts.
-#     * **Apply fungicides preventively:** Use them during spring, especially during wet periods.
-#     * **Improve air circulation:** Prune and space trees appropriately for better air flow.
-#     """,
-#     'Apple___healthy': """**Keeping Apple Trees Healthy:**
+    -  Plant resistant varieties: Choose apple varieties resistant to the disease.
+    -  Remove cedar trees: Eliminate cedar trees in the vicinity, which act as alternate hosts.
+    -  Apply fungicides preventively: Use them during spring, especially during wet periods.
+    -  Improve air circulation: Prune and space trees appropriately for better air flow.
+    """,
+    'Apple___healthy': """  **Keeping Apple Trees Healthy:**
 
-#     * **Regular pruning:** Prune regularly to improve air circulation and sunlight exposure.
-#     * **Balanced fertilization:** Apply fertilizers based on soil test results.
-#     * **Pest monitoring:** Watch for aphids, mites, and codling moths, and take control measures if needed.
-#     * **Deep watering:** Water trees deeply during dry periods, especially in summer.
-#     """,
-#     'Blueberry___healthy': """**Growing Healthy Blueberries:**
+    -  Regular pruning: Prune regularly to improve air circulation and sunlight exposure.
+    -  Balanced fertilization: Apply fertilizers based on soil test results.
+    -  Pest monitoring: Watch for aphids, mites, and codling moths, and take control measures if needed.
+    -  Deep watering: Water trees deeply during dry periods, especially in summer.
+    """,
+    'Blueberry___healthy': """  **Growing Healthy Blueberries:**
 
-#     * **Well-drained, acidic soil:** Plant blueberries in soil with a pH between 4.5 and 5.5.
-#     * **Regular irrigation:** Water regularly, especially during dry spells, to maintain consistent moisture.
-#     * **Mulching:** Apply mulch around the base of plants to suppress weeds and retain moisture.
-#     * **Annual pruning:** Prune annually to remove dead or diseased wood and encourage new growth.
-#     """,
-#     'Cherry_(including_sour)___Powdery_mildew': """**Combating Powdery Mildew in Cherries:**
+    -  Well-drained, acidic soil: Plant blueberries in soil with a pH between 4.5 and 5.5.
+    -  Regular irrigation: Water regularly, especially during dry spells, to maintain consistent moisture.
+    -  Mulching: Apply mulch around the base of plants to suppress weeds and retain moisture.
+    -  Annual pruning: Prune annually to remove dead or diseased wood and encourage new growth.
+    """,
+    'Cherry_(including_sour)___Powdery_mildew': """  **Combating Powdery Mildew in Cherries:**
 
-#     * **Improve air circulation:** Prune properly to reduce humidity and minimize infection.
-#     * **Apply fungicides preventively:** Start at bud break and continue throughout the season.
-#     * **Monitor for symptoms:** Take immediate action at the first sign of infection.
-#     """,
-#     'Cherry_(including_sour)___healthy': """**Maintaining Healthy Cherry Trees:**
+    -  Improve air circulation: Prune properly to reduce humidity and minimize infection.
+    -  Apply fungicides preventively: Start at bud break and continue throughout the season.
+    -  Monitor for symptoms: Take immediate action at the first sign of infection.
+    """,
+    'Cherry_(including_sour)___healthy': """  **Maintaining Healthy Cherry Trees:**
 
-#     * **Open the canopy:** Prune to improve sunlight penetration and prevent diseases.
-#     * **Balanced fertilization:** Apply fertilizers based on soil test results in early spring.
-#     * **Pest control:** Monitor for cherry fruit fly and cherry slug, and take necessary measures.
-#     """,
-#     'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot': """**Managing Cercospora and Gray Leaf Spot in Corn:**
+    -  Open the canopy: Prune to improve sunlight penetration and prevent diseases.
+    -  Balanced fertilization: Apply fertilizers based on soil test results in early spring.
+    -  Pest control: Monitor for cherry fruit fly and cherry slug, and take necessary measures.
+    """,
+    'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot': """  **Managing Cercospora and Gray Leaf Spot in Corn:**
 
-#     * **Crop rotation:** Rotate crops to prevent pathogen buildup in the soil.
-#     * **Resistant varieties:** Use resistant corn varieties when available.
-#     * **Fungicide application:** Apply fungicides upon symptom appearance or preventively during high humidity and warm temperatures.
-#     * **Optimal plant spacing:** Maintain proper spacing and avoid overhead irrigation to reduce leaf wetness.
-#     """,
-#     'Corn_(maize)___Common_rust_': """**Controlling Common Rust in Corn:**
+    -  Crop rotation: Rotate crops to prevent pathogen buildup in the soil.
+    -  Resistant varieties: Use resistant corn varieties when available.
+    -  Fungicide application: Apply fungicides upon symptom appearance or preventively during high humidity and warm temperatures.
+    -  Optimal plant spacing: Maintain proper spacing and avoid overhead irrigation to reduce leaf wetness.
+    """,
+    'Corn_(maize)___Common_rust_': """  **Controlling Common Rust in Corn:**
 
-#     * **Resistant varieties:** Plant corn varieties resistant to rust.
-#     * **Crop debris removal:** Remove crop debris after harvest to reduce overwintering inoculum.
-#     * **Fungicide application:** Apply fungicides preventively if needed, especially during high humidity and warm temperatures.
-#     * **Monitor fields regularly:** Watch for signs of rust infection and take action to prevent spread.
-#     """,
-#     'Corn_(maize)___Northern_Leaf_Blight': """**Preventing Northern Leaf Blight in Corn:**
+    -  Resistant varieties: Plant corn varieties resistant to rust.
+    -  Crop debris removal: Remove crop debris after harvest to reduce overwintering inoculum.
+    -  Fungicide application: Apply fungicides preventively if needed, especially during high humidity and warm temperatures.
+    -  Monitor fields regularly: Watch for signs of rust infection and take action to prevent spread.
+    """,
+    'Corn_(maize)___Northern_Leaf_Blight': """  **Preventing Northern Leaf Blight in Corn:**
 
-#     * **Crop rotation:** Rotate crops to avoid planting corn in the same area consecutively.
-#     * **Resistant varieties:** Use corn varieties resistant to northern leaf blight.
-#     * **Fungicide application:** Apply fungicides preventively during high humidity and warm temperatures.
-#     * **Proper field hygiene:** Remove crop debris after harvest to minimize overwintering inoculum.
-#     """,
-# }
+    -  Crop rotation: Rotate crops to avoid planting corn in the same area consecutively.
+    -  Resistant varieties: Use corn varieties resistant to northern leaf blight.
+    -  Fungicide application: Apply fungicides preventively during high humidity and warm temperatures.
+    -  Proper field hygiene: Remove crop debris after harvest to minimize overwintering inoculum.
+    """,
+    'Grape___Black_rot': """  **Managing Black Rot in Grapes:**
+
+    -  Prune properly: Prune vines to improve air circulation and sunlight exposure.
+    -  Apply fungicides: Use them preventively starting at bud break and continue throughout the season.
+    -  Remove mummified berries: Remove and destroy mummified berries to reduce overwintering inoculum.
+    -  Monitor for symptoms: Take immediate action at the first sign of black rot infection.
+    """,
+    'Grape___Esca_(Black_Measles)': """  **Controlling Esca (Black Measles) in Grapes:**
+
+    -  Prune infected parts: Remove and destroy diseased wood promptly.
+    -  Apply protectant fungicides: Use them preventively during pruning wounds and dormant season.
+    -  Manage vine vigor: Avoid excessive vine vigor through appropriate pruning and nutrient management.
+    -  Monitor and remove fungal structures: Regularly inspect vines and remove visible fungal structures.
+    """,
+    'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)': """  **Managing Isariopsis Leaf Spot in Grapes:**
+
+    -  Prune properly: Prune vines to improve air circulation and reduce humidity.
+    -  Apply fungicides preventively: Use them before symptom appearance, especially during wet periods.
+    -  Avoid overhead irrigation: Minimize leaf wetness by using drip irrigation or soaker hoses.
+    -  Remove and destroy infected leaves: Remove infected leaves promptly to reduce disease spread.
+    """,
+    'Grape___healthy': """  **Keeping Grapevines Healthy:**
+
+    -  Proper pruning: Prune vines annually to remove old wood and promote new growth.
+    -  Balanced nutrition: Maintain soil fertility and pH to support healthy vine growth.
+    -  Pest monitoring: Monitor for pests such as grape phylloxera and grapevine leafhoppers.
+    -  Water management: Provide adequate but not excessive irrigation, especially during fruit development.
+    """,
+    'Orange___Haunglongbing_(Citrus_greening)': """ **Managing Citrus Greening (Huanglongbing):**
+
+    -  Remove infected trees: Remove and destroy infected trees to prevent disease spread.
+    -  Control citrus psyllid: Use insecticides and biological control methods to manage psyllid populations.
+    -  Nutritional management: Apply balanced fertilization and manage soil pH to support tree health.
+    -  Sanitation: Remove fallen leaves and fruit to reduce inoculum sources.
+    """,
+    'Peach___Bacterial_spot': """  **Controlling Bacterial Spot in Peaches:**
+
+    -  Prune for airflow: Prune trees to improve air circulation within the canopy.
+    -  Apply copper sprays: Apply copper-based fungicides during dormancy and before bud swell.
+    -  Manage irrigation: Avoid overhead irrigation to minimize leaf wetness.
+    -  Remove and destroy infected plant parts: Remove and destroy infected leaves, branches, and fruit to reduce disease spread.
+    """,
+    'Peach___healthy': """  **Keeping Peach Trees Healthy:**
+
+    -  Regular pruning: Prune peach trees annually to remove dead or diseased wood.
+    -  Fertilize appropriately: Apply balanced fertilization based on soil test results.
+    -  Pest management: Monitor for peachtree borers, aphids, and other pests, and take appropriate control measures.
+    -  Proper watering: Provide consistent irrigation, especially during dry periods, to support tree health.
+    """,
+    'Pepper,_bell___Bacterial_spot': """  **Managing Bacterial Spot in Bell Peppers:**
+
+    -  Rotate crops: Practice crop rotation to reduce pathogen buildup in the soil.
+    -  Apply copper-based fungicides: Use them preventively during periods of high humidity.
+    -  Practice good sanitation: Remove and destroy infected plant debris to reduce disease spread.
+    -  Provide adequate spacing: Space plants properly to improve air circulation and reduce humidity.
+    """,
+    'Pepper,_bell___healthy': """  **Maintaining Healthy Bell Pepper Plants:**
+
+    -  Proper spacing: Plant bell peppers with adequate spacing to allow for air circulation.
+    -  Mulching: Apply mulch around plants to retain moisture and suppress weeds.
+    -  Fertilize regularly: Apply balanced fertilization according to plant needs and soil test results.
+    -  Pest monitoring: Monitor for pests such as aphids, thrips, and pepper maggots, and take appropriate control measures.
+    """,
+    'Potato___Early_blight': """  **Managing Early Blight in Potatoes:**
+
+    -  Crop rotation: Rotate potatoes with non-host crops to reduce pathogen buildup in the soil.
+    -  Remove infected foliage: Remove and destroy infected leaves to reduce disease spread.
+    -  Apply fungicides: Use them preventively or upon symptom appearance, especially during wet periods.
+    -  Provide good drainage: Ensure proper soil drainage to reduce leaf wetness and minimize disease development.
+    """,
+    'Potato___Late_blight': """  **Controlling Late Blight in Potatoes:**
+
+    -  Monitor for symptoms: Regularly inspect plants for signs of late blight and take immediate action if detected.
+    -  Apply fungicides preventively: Use them before symptom appearance, especially during wet periods.
+    -  Prune for airflow: Prune plants to improve air circulation within the canopy.
+    -  Remove infected plant parts: Remove and destroy infected leaves and stems to reduce disease spread.
+    """,
+    'Potato___healthy': """  **Keeping Potato Plants Healthy:**
+
+    -  Crop rotation: Rotate potatoes with non-host crops to reduce disease buildup in the soil.
+    -  Provide good soil drainage: Ensure proper soil drainage to prevent waterlogged conditions, which can favor disease development.
+    -  Practice good sanitation: Remove and destroy infected plant debris to reduce disease inoculum.
+    -  Monitor for pests: Watch for pests such as potato beetles and aphids, and take appropriate control measures.
+    """,
+    'Raspberry___healthy': """  **Growing Healthy Raspberries:**
+
+    -  Proper site selection: Choose a site with well-drained soil and full sun exposure.
+    -  Regular irrigation: Water raspberries deeply and consistently, especially during fruit development.
+    -  Mulching: Apply mulch around plants to conserve moisture and suppress weeds.
+    -  Annual pruning: Prune raspberry canes annually to remove old canes and promote new growth.
+    """,
+    'Soybean___healthy': """  **Maintaining Healthy Soybean Plants:**
+
+    -  Crop rotation: Rotate soybeans with non-host crops to reduce disease pressure.
+    -  Planting date: Plant soybeans early to avoid flowering during periods of high disease pressure.
+    -  Seed treatment: Use fungicide-treated seeds to protect against soilborne diseases.
+    -  Weed management: Control weeds to reduce competition and disease carryover.
+    """,
+    'Squash___Powdery_mildew': """  **Managing Powdery Mildew in Squash:**
+
+    -  Prune for airflow: Prune squash plants to improve air circulation and reduce humidity.
+    -  Apply fungicides preventively: Use them before symptom appearance, especially during periods of high humidity.
+    -  Provide good spacing: Plant squash with adequate spacing to allow for airflow between plants.
+    -  Water at the base: Avoid overhead irrigation to minimize leaf wetness and reduce disease spread.
+    """,
+    'Strawberry___Leaf_scorch': """  **Controlling Leaf Scorch in Strawberries:**
+
+    -  Plant disease-free stock: Start with certified disease-free plants to reduce disease introduction.
+    -  Mulching: Apply mulch around plants to conserve moisture and prevent soil splash onto leaves.
+    -  Water management: Provide consistent irrigation, especially during fruit development, to prevent water stress.
+    -  Fertilize properly: Apply balanced fertilization according to plant needs and soil test results.
+    """,
+    'Strawberry___healthy': """  **Growing Healthy Strawberries:**
+
+    -  Proper site selection: Choose a site with well-drained soil and full sun exposure.
+    -  Regular irrigation: Water strawberries deeply and consistently, especially during fruit development.
+    -  Mulching: Apply mulch around plants to conserve moisture, suppress weeds, and prevent soil splash onto leaves.
+    -  Renovation: Renovate strawberry beds annually to remove old plants and encourage new growth.
+    """,
+    'Tomato___Bacterial_spot': """  **Managing Bacterial Spot in Tomatoes:**
+
+    -  Rotate crops: Avoid planting tomatoes in the same location for consecutive seasons.
+    -  Provide good airflow: Space plants properly and prune for airflow within the canopy.
+    -  Apply copper-based fungicides: Use them preventively or upon symptom appearance, especially during warm and humid conditions.
+    -  Practice good sanitation: Remove and destroy infected plant debris to reduce disease carryover.
+    """,
+    'Tomato___Early_blight': """  **Controlling Early Blight in Tomatoes:**
+
+    -  Crop rotation: Rotate tomatoes with non-host crops to reduce pathogen buildup in the soil.
+    -  Mulching: Apply mulch around plants to prevent soil splash onto leaves and reduce disease spread.
+    -  Prune for airflow: Prune tomatoes to improve air circulation within the canopy.
+    -  Apply fungicides preventively: Use them before symptom appearance, especially during wet periods.
+    """,
+    'Tomato___Late_blight': """  **Managing Late Blight in Tomatoes:**
+
+    -  Monitor for symptoms: Regularly inspect plants for signs of late blight and take immediate action if detected.
+    -  Apply fungicides preventively: Use them before symptom appearance, especially during wet periods.
+    -  Prune for airflow: Prune plants to improve air circulation within the canopy.
+    -  Remove infected plant parts: Remove and destroy infected leaves and stems to reduce disease spread.
+    """,
+    'Tomato___Leaf_Mold': """  **Controlling Leaf Mold in Tomatoes:**
+
+    -  Provide good airflow: Space plants properly and prune for airflow within the canopy.
+    -  Avoid overhead irrigation: Water at the base of plants to minimize leaf wetness.
+    -  Apply fungicides preventively: Use them before symptom appearance, especially during periods of high humidity.
+    -  Practice good sanitation: Remove and destroy infected plant debris to reduce disease carryover.
+    """,
+    'Tomato___Septoria_leaf_spot': """  **Managing Septoria Leaf Spot in Tomatoes:**
+
+    -  Crop rotation: Rotate tomatoes with non-host crops to reduce pathogen buildup in the soil.
+    -  Prune for airflow: Prune tomatoes to improve air circulation within the canopy.
+    -  Apply fungicides preventively: Use them before symptom appearance, especially during wet periods.
+    -  Remove infected leaves: Remove and destroy infected leaves promptly to reduce disease spread.
+    """,
+    'Tomato___Spider_mites Two-spotted_spider_mite': """  **Controlling Two-Spotted Spider Mites in Tomatoes:**
+
+    -  Monitor populations: Regularly inspect plants for signs of spider mite infestation.
+    -  Spray with water: Use a strong stream of water to dislodge spider mites from plants.
+    -  Apply insecticidal soap or neem oil: Use organic options to control spider mites.
+    -  Use miticides if necessary: Apply chemical miticides as a last resort if mite populations are high and other methods have failed.
+    """,
+    'Tomato___Target_Spot': """  **Managing Target Spot in Tomatoes:**
+
+    -  Rotate crops: Rotate tomatoes with non-host crops to reduce pathogen buildup in the soil.
+    -  Prune for airflow: Prune tomatoes to improve air circulation within the canopy.
+    -  Apply fungicides preventively: Use them before symptom appearance, especially during wet periods.
+    -  Remove infected leaves: Remove and destroy infected leaves promptly to reduce disease spread.
+    """,
+    'Tomato___Tomato_Yellow_Leaf_Curl_Virus': """  **Controlling Tomato Yellow Leaf Curl Virus:**
+
+    -  Use virus-resistant varieties: Plant tomato varieties that are resistant to TYLCV.
+    -  Manage whiteflies: Control whitefly populations with insecticides or reflective mulches.
+    -  Remove infected plants: Remove and destroy plants showing symptoms to prevent virus spread.
+    -  Weed management: Control weeds that may serve as alternative hosts for the virus.
+    """,
+    'Tomato___Tomato_mosaic_virus': """  **Managing Tomato Mosaic Virus:**
+
+    -  Use virus-free seed: Start with certified virus-free seed or transplants.
+    -  Practice good hygiene: Wash hands and use clean tools to prevent mechanical transmission of the virus.
+    -  Control aphids: Manage aphid populations with insecticides or reflective mulches to reduce virus spread.
+    -  Remove infected plants: Remove and destroy infected plants promptly to prevent virus spread.
+    """,
+    'Tomato___healthy': """  **Keeping Tomato Plants Healthy:**
+
+    -  Crop rotation: Rotate tomatoes with non-host crops to reduce disease pressure.
+    -  Provide good airflow: Space plants properly and prune for airflow within the canopy.
+    -  Mulching: Apply mulch around plants to prevent soil splash onto leaves and reduce disease spread.
+    -  Proper watering: Water at the base of plants to minimize leaf wetness and reduce disease risk.
+    """
+}
+
+
