@@ -12,7 +12,7 @@ and gardeners enhance crop yield and plant quality.
 
 The application is created by [Jeet Shah](https://github.com/jeetsh4h) and [Aniket Khetan](https://github.com/aniketkhetan).
 
-The application is hosted on [Streamlit](https://paudhayodha.streamlit.app/) and can be accessed right now. 
+The application is hosted on Streamlit and can be [accessed here](https://paudhayodha.streamlit.app/). 
 Changes to the deployed app are still being made over at [this repository](https://github.com/jeetsh4h/paudhayodha).
 
 To run the application on your local machine, follow the steps below:
