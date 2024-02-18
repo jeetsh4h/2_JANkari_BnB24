@@ -38,7 +38,7 @@ def main():
         layout="wide", 
         initial_sidebar_state="expanded"
     )
-
+    st.sidebar.success('How to be a yodha to your paudha :potted_plant:')
     st.title('PaudhaYodha :potted_plant:')
     st.subheader('Hello, Learn the best way to treat your favourite plants! :wave:')
     st.write("PaudhaYodha is a web app that helps you identify and treat your plants. It uses machine learning to identify the plant and provide you with the best care tips. Just upload a picture of your plant and let PaudhaYodha do the rest!")
