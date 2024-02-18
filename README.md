@@ -22,7 +22,7 @@ Clone the current repository using the following command:
 git clone https://github.com/jeetsh4h/2_JANkari_BnB24.git
 cd 2_JANkari_BnB24/paudhayodha
 ```
-*OR* clone the Paudhayodha repsitory.
+*OR* clone the Paudhayodha🪴 repsitory.
 ```bash
 git clone https://github.com/jeetsh4h/paudhayodha.git
 ```
