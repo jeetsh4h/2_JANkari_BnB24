@@ -7,7 +7,7 @@ from plant_care_tips import class_code_to_label, label_to_name, plant_care_tips_
 
 @st.cache_resource(ttl=3600)
 def load_plant_disease_model():
-    return load_model("./assets/resent_plant_village_final.h5")
+    return load_model("paudhayodha/assets/resent_plant_village_final.h5")
 
 
 def process_file(uploaded_file):
@@ -70,7 +70,7 @@ def main():
             st.write(prediction_write_up)
 
     elif option == 'Try a Demo':
-        image = np.array(Image.open("./assets/apple_scab.jpeg"))
+        image = np.array(Image.open("paudhayodha/assets/apple_scab.jpeg"))
         st.image(image)
         
         st.write("Demo image: Apple with Scab")

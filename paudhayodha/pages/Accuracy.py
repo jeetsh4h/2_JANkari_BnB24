@@ -1,12 +1,12 @@
 import streamlit as st
 
 # all image paths
-apple_scab = './assets/apple_scab.jpeg'
-cherry_disease = './assets/Cherry_disease.jpeg'
-potato_healthy = './assets/potato_healthy.jpeg'
-unclear_tomato = './assets/unclear_tomato.jpeg'
-blurry  = './assets/blurrry.jpeg'
-full_plant = './assets/full_plant.jpeg'
+apple_scab = 'paudhayodha/assets/apple_scab.jpeg'
+cherry_disease = 'paudhayodha/assets/Cherry_disease.jpeg'
+potato_healthy = 'paudhayodha/assets/potato_healthy.jpeg'
+unclear_tomato = 'paudhayodha/assets/unclear_tomato.jpeg'
+blurry  = 'paudhayodha/assets/blurrry.jpeg'
+full_plant = 'paudhayodha/assets/full_plant.jpeg'
 
 # page niceties
 st.header('How to Achieve More Accurate Results')
